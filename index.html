@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Anvi Sharma — Data scientist, engineer, and problem-solver." />
+  <title>Anvi Sharma — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Loader -->
+  <div class="loader" data-loader>
+    <span class="loader__count" data-loader-count>0</span>
+  </div>
+
+  <!-- Scroll progress LEGO car (pure CSS) -->
+  <div class="lego-track" aria-hidden="true">
+    <div class="lego-car" data-lego-car>
+      <div class="lego-car__body">
+        <span class="lego-car__stud"></span>
+        <span class="lego-car__stud"></span>
+        <div class="lego-car__cabin"></div>
+      </div>
+      <div class="lego-car__wheel lego-car__wheel--rear" data-lego-wheel></div>
+      <div class="lego-car__wheel lego-car__wheel--front" data-lego-wheel></div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <header class="nav" data-nav>
+    <a href="#top" class="nav__logo">Anvi Sharma<span>.</span></a>
+    <nav class="nav__links">
+      <a href="#about" class="nav__link" data-link>About</a>
+      <a href="#work" class="nav__link" data-link>Work</a>
+      <a href="#skills" class="nav__link" data-link>Skills</a>
+      <a href="#interests" class="nav__link" data-link>Interests</a>
+      <a href="#contact" class="nav__link" data-link>Contact</a>
+    </nav>
+    <button class="nav__toggle" data-nav-toggle aria-label="Toggle menu">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero" id="hero">
+        <h1 class="hero__title">
+          <span class="line" data-reveal><span>Hi, I'm Anvi.</span></span>
+          <span class="line" data-reveal><span><em>Data Scientist</em></span> by focus,<em>engineer</em></span>
+          <span class="line" data-reveal></span> by training.</span>
+        </h1>
+        <p class="hero__sub" data-reveal>
+          Data scientist &amp; developer excited about acceleration with AI.
+        </p>
+        <div class="hero__cta" data-reveal>
+          <a href="#work" class="btn" data-magnetic>View my work</a>
+          <a href="#contact" class="btn btn--ghost" data-magnetic>Get in touch</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Marquee -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Predictive Modeling</span><span>&bull;</span><span></span><span>&bull;</span>
+        <span>Automation</span><span>&bull;</span><span></span><span>&bull;</span>
+        <span>Full-Stack Development</span><span>&bull;</span><span></span><span>&bull;</span>
+        <span>Systems Thinking</span><span>&bull;</span><span></span><span>&bull;</span>
+        <span>Data Storytelling</span><span>&bull;</span><span></span><span>&bull;</span>
+      </div>
+    </div>
+
+    <!-- About -->
+    <section class="section about" id="about">
+      <p class="section__label" data-reveal>01 — About</p>
+      <div class="about__grid">
+        <h2 class="about__text" data-reveal-lines>
+          I'm a multidisciplinary engineer who loves turning bright ideas into
+          accessible products. I care about the small
+          details that makes for an effortless user experience.
+        </h2>
+        <div class="about__meta">
+          <div class="about__stat" data-reveal>
+            <span class="about__num" data-count="1">0</span>
+            <span class="about__cap">Years experience</span>
+          </div>
+          <div class="about__stat" data-reveal>
+            <span class="about__num" data-count="6">0</span>
+            <span class="about__cap">Technologies mastered</span>
+          </div>
+          <div class="about__stat" data-reveal>
+            <span class="about__num" data-count="3">0</span>
+            <span class="about__cap">Projects developed</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work -->
+    <section class="section work" id="work">
+      <p class="section__label" data-reveal>02 — Selected work</p>
+      <div class="work__list">
+        <div class="project project--links" data-reveal>
+          <div class="project__info">
+            <h3 class="project__title">Diabetes Risk Calculator</h3>
+            <p class="project__desc">A full-stack calculator, from model training to viz in Streamlit</p>
+          </div>
+          <div class="project__tags"><span>Python</span><span>scikit-learn</span><span>Streamlit</span></div>
+          <div class="project__links">
+            <a href="https://diabetes-risk-calculate.streamlit.app/" class="project__link" data-magnetic target="_blank" rel="noopener">Live app <span>&#8599;</span></a>
+            <a href="https://github.com/anvisharmaa/diabetes-risk-analyzer" class="project__link project__link--ghost" data-magnetic target="_blank" rel="noopener">Code <span>&#8599;</span></a>
+          </div>
+        </div>
+        <div class="project project--links" data-reveal>
+          <div class="project__info">
+            <h3 class="project__title">Diabetes Risk Notebook</h3>
+            <p class="project__desc">A prelude to my live app, the Diabetes Risk Calculator, explaining all of my decisions as a data scientist.</p>
+          </div>
+          <div class="project__tags"><span>Google Colab</span><span>Python</span></div>
+          <div class="project__links">
+            <a href="https://colab.research.google.com/drive/1csmFMKgxqm8WPtCxIcWfLEUuZZL18Toh?usp=sharing" class="project__link project__link--ghost" data-magnetic target="_blank" rel="noopener">Open notebook <span>&#8599;</span></a>
+          </div>
+        </div>
+        <div class="project" data-reveal>
+          <div class="project__info">
+            <h3 class="project__title">Product Purchase Recommendation Engine</h3>
+            <p class="project__desc">Supporting financial advisors with automated recommendations per client</p>
+          </div>
+          <div class="project__tags"><span>Python</span><span>JavaScript</span><span>R</span></div>
+        </div>
+        <div class="project" data-reveal>
+          <div class="project__info">
+            <h3 class="project__title">Doodle Jump</h3>
+            <p class="project__desc">An homage to my first app, a recreation of Doodle Jump</p>
+          </div>
+          <div class="project__tags"><span>Python</span><span>GitHub</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section skills" id="skills">
+      <p class="section__label" data-reveal>03 — What I do</p>
+      <div class="skills__grid">
+        <article class="skill" data-reveal>
+          <h3>Data Science</h3>
+          <p>Statistical modeling, exploratory analysis, and visualization with tools not limited to Python, SQL, and Power BI.</p>
+        </article>
+        <article class="skill" data-reveal>
+          <h3>Machine Learning</h3>
+          <p>Training and testing the intricaces of model selection and cross validation whilst using sci-kit learn and TensorFlow from experimentation to deployment.</p>
+        </article>
+        <article class="skill" data-reveal>
+          <h3>Software Engineering</h3>
+          <p>Writing clear and efficient code across the stack for tool experience to be enjoyed by both developers and users. </p>
+        </article>
+        <article class="skill" data-reveal>
+          <h3>Data Engineering</h3>
+          <p>Re-building pipelines and queries to transform raw data into insights focused on performance.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Interests -->
+    <section class="section interests" id="interests">
+      <p class="section__label" data-reveal>04 — Off the clock</p>
+      <h2 class="interests__intro" data-reveal-lines>
+        When I'm not building models, I'm usually building something else.
+      </h2>
+      <div class="interests__grid">
+
+        <article class="interest interest--feature" data-reveal data-magnetic>
+          <div class="interest__brick" aria-hidden="true">
+            <span class="stud"></span><span class="stud"></span>
+            <span class="stud"></span><span class="stud"></span>
+          </div>
+          <h3 class="interest__title">Building LEGO cars</h3>
+          <p class="interest__desc">
+            Brick by brick, just like good software. There's something satisfying
+            about a clean build that clicks together exactly right.
+          </p>
+          <span class="interest__tag">Current obsession</span>
+        </article>
+
+        <article class="interest" data-reveal data-magnetic>
+          <span class="interest__icon" aria-hidden="true">&#127934;</span>
+          <h3 class="interest__title">Pickleball</h3>
+          <p class="interest__desc">The best excuse to get off the keyboard.</p>
+        </article>
+
+        <article class="interest" data-reveal data-magnetic>
+          <span class="interest__icon" aria-hidden="true">&#129513;</span>
+          <h3 class="interest__title">Sudoku</h3>
+          <p class="interest__desc">Pattern-hunting, but make it a coffee-break puzzle.</p>
+        </article>
+
+        <article class="interest" data-reveal data-magnetic>
+          <span class="interest__icon" aria-hidden="true">&#128375;</span>
+          <h3 class="interest__title">Spider-Man superfan</h3>
+          <p class="interest__desc">With great data comes great responsibility.</p>
+        </article>
+
+        <article class="interest" data-reveal data-magnetic>
+          <span class="interest__icon" aria-hidden="true">&#127859;</span>
+          <h3 class="interest__title">Cooking</h3>
+          <p class="interest__desc">Following a recipe, then ignoring it entirely.</p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact" id="contact">
+      <p class="section__label" data-reveal>05 — Contact</p>
+      <h2 class="contact__title" data-reveal-lines>Let's connect!</h2>
+      <a href="mailto:anvi.sharma1@gmail.com" class="contact__email" data-magnetic>anvi.sharma1@gmail.com</a>
+      <div class="contact__socials" data-reveal>
+        <a href="https://www.linkedin.com/in/anvi-sharma33" data-magnetic target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>&copy; <span data-year></span> Anvi Sharma </span>
+    <span>Building with intention.</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
