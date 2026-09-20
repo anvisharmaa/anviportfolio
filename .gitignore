@@ -10,3 +10,11 @@ desktop.ini
 
 # Node (in case you add tooling later)
 node_modules/
+
+# Secrets — never commit real API keys
+.env
+.env.*
+!.env.example
+
+# Netlify local dev
+.netlify/
