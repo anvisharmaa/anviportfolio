@@ -15,13 +15,10 @@
 const KNOWLEDGE_BASE = `
 # ABOUT ANVI SHARMA
 
-Anvi Sharma is a Data Scientist by focus and an engineer by training. She is a
-multidisciplinary engineer who loves turning bright ideas into accessible
-products, and she cares about the small details that make for an effortless user
-experience. She is excited about accelerating work with AI and fostering a growth
-space for the people around her.
+Anvi Sharma is a Data Scientist and aspiring AI/ML engineer. She is excited about accelerating work with AI and fostering a growth
+space for those around her.
 
-- Location: St. Petersburg / Tampa, Florida area. Open to relocation.
+- Location: Tampa, Florida (Open to relocation)
 - Email: anvi.sharma1@gmail.com
 - Phone: 813-841-8240
 - LinkedIn: https://www.linkedin.com/in/anvi-sharma33
@@ -40,12 +37,11 @@ Relevant coursework:
 - Business Analytics & AI (Python)
 - AI Fundamentals (Python)
 
-She holds a bachelor's degree and is eager to deepen her expertise further by
-pursuing a master's.
+As of right now she holds just a bachelor's degree but would like to pursue a master's/PhD.
 
 # EXPERIENCE
 
-## Jabil — Programmer Analyst Intern (Manufacturing)
+## Jabil — Programmer Analyst Intern
 St. Petersburg, FL | June 2026 – Present
 - Co-developed an AI document translation app for global use, cutting pre-existing
   third-party contract costs by $100K+.
@@ -55,48 +51,41 @@ St. Petersburg, FL | June 2026 – Present
   through the app for application managers.
 - Designed a QuickSight dashboard that improved loading times by 30% for the IT
   Supply Chain team.
+- Explored data governance as a data custodian using Informatica
 
-## Raymond James Investment Management — Data Distribution and Technology Summer Associate (Fintech)
+## Raymond James Investment Management — Data Distribution and Technology Summer Associate
 St. Petersburg, FL | June 2025 – August 2025
-- Increased client retention by 15% through event attendance trend analysis and
-  planning for the marketing team using K-nearest neighbors.
-- Boosted the efficiency of advisor-client meetings by 20% through exploratory
-  data analysis (EDA) of historical data and client purchase records.
+- Increased client retention by 15% through recommendations of marketing events using k-Nearest Neighbors. 
+- Boosted the efficiency of advisor-client meetings by 20% through creation of a future 
+  purchase recommender for clients based on historical data.
 - Supported CRM data migration from Microsoft Dynamics to Salesforce for client
   contact information and advisor outreach tracking.
 
-## Eufinity — Data Science Intern (Healthcare Startup)
-Remote, USA | May 2024 – August 2024
-- Designed and deployed Power BI dashboards to track client satisfaction and
-  reduced client survey bug feedback by 25%.
-
 # PROJECTS
 
-## Diabetes Risk Calculator (Python) — March 2026
+## Diabetes Risk Calculator
 A full-stack calculator, from model training to visualization in Streamlit.
-- Trained and tested CDC public data on diabetes to represent diabetes risk with a
-  23% error rate under a radial SVM.
+- Trained and tested CDC public data on diabetes to represent diabetes risk.
 - Deployed a user interface in Streamlit to promote accessibility of the
   calculator and hosted it online through GitHub.
 - Live app: https://diabetes-risk-calculate.streamlit.app/
 - Code: https://github.com/anvisharmaa/diabetes-risk-analyzer
 - Tech: Python, scikit-learn, Streamlit
 
-## Diabetes Risk Notebook (Google Colab, Python)
-A prelude to the live Diabetes Risk Calculator app that explains all of Anvi's
+## Diabetes Risk Notebook
+A prelude to the live Diabetes Risk Calculator app that explains her
 decisions as a data scientist.
 - Notebook: https://colab.research.google.com/drive/1csmFMKgxqm8WPtCxIcWfLEUuZZL18Toh?usp=sharing
 
-## Project Propensity to Buy / Product Purchase Recommendation Engine (Python, JavaScript, R) — August 2025
+## Project Propensity to Buy / Product Purchase Recommendation Engine
 Supporting financial advisors with automated recommendations per client at Raymond
 James Investment Management (RJIM).
-- Developed and monitored a 3-product purchase recommendation engine for clients,
-  targeting Raymond James' core value of "client first" by programming conditional
-  probability arithmetic.
+- Developed and monitored a 3-product purchase recommendation engine for clients
+  through real-life application of conditional probability arithmetic.
 - Transformed and evaluated raw data into an HTML extension with filters, tooltips,
   and dropdown features for advisors.
 
-## Doodle Jump (Python) — November 2023
+## Doodle Jump
 An homage to her first app: a recreation of the Doodle Jump game.
 - Recreated the game with attention to detail on perspective and camera shifts,
   obstacles and increasing difficulty, and collision rendering.
@@ -107,17 +96,16 @@ Data Science: statistical modeling, exploratory analysis, and visualization with
 tools including Python, SQL, and Power BI.
 Machine Learning: model selection and cross-validation with scikit-learn and
 TensorFlow, from experimentation to deployment.
-Software Engineering: writing clear, efficient code across the stack for an
-enjoyable experience for developers and users alike.
+Software Engineering: writing clear, efficient code across the stack.
 Data Engineering: rebuilding pipelines and queries to transform raw data into
 performance-focused insights.
 
-Programming Languages: Python, SQL (MySQL, T-SQL, PostgreSQL, NoSQL), R, C++, C#,
+Programming Languages: Python, SQL (MySQL, T-SQL, PostgreSQL, NoSQL), R, C++, C#, CSS,
 JavaScript, MATLAB.
 Python Libraries: Pandas, scikit-learn, NumPy, TensorFlow, Keras, PyTorch, Seaborn,
 Matplotlib, Streamlit.
 Software & Tools: PyCharm, Kiro, Google Colab, Jupyter, Git, GitHub, Node.js, AWS,
-Snowflake, Apache Airflow, Excel, Tableau/Power BI, Azure DevOps, Agile, Microsoft
+Snowflake, Apache Airflow, Excel, Tableau/Power BI, Azure DevOps, Agile, Informatica, Microsoft
 Office.
 
 # CERTIFICATIONS & AWARDS
@@ -142,13 +130,10 @@ Jabil Cares.
 # INTERESTS & HOBBIES ("Anvi After Hours")
 
 When she's not building models, she's usually building something else.
-- LEGO (current obsession: building the latest LEGO Technic release). "Brick by
-  brick, just like good software."
-- Pickleball — the best excuse to get off the keyboard.
-- Sudoku — pattern-hunting, but make it a coffee-break puzzle.
-- Spider-Man superfan — "with great data comes great responsibility."
-- Cooking — following a recipe, then ignoring it entirely.
-- Also enjoys video games, anime, hiking, and reading.
+- LEGO: currently building the Koenigsegg Sadair's Spear Megacar (yes it was $450)
+- Pickleball — always looking for a challenge
+- Sudoku — wordle or strands could never compare
+- Cooking — trying out new recipes as an extremely picky eater is a lot harder than you think
 `;
 
 module.exports = { KNOWLEDGE_BASE };
