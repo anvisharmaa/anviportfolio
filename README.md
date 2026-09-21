@@ -85,3 +85,75 @@ Pick any one. All give you a public URL you can paste into your LinkedIn profile
 - **Featured section:** Add a post or link to your live URL so it shows as a card on your profile.
 - **Contact info:** Edit your intro → Contact info → add the site under Website.
 - **About section:** Mention the portfolio and paste the link.
+
+---
+
+## Ask AI — the portfolio chatbot
+
+The **Ask AI** section (`#ask-ai`) is an LLM-powered assistant that answers questions about Anvi's work, projects, skills, and interests. It's grounded in a knowledge base built from the resume, so it only talks about Anvi.
+
+### How it works
+
+```
+Browser (chatbot.js)
+   │  POST /.netlify/functions/chat   { messages: [...] }
+   ▼
+Netlify function (netlify/functions/chat.js)
+   │  injects knowledge-base.js into the system prompt
+   │  calls Groq (OpenAI-compatible API) with GROQ_API_KEY
+   ▼
+Groq LLM  →  reply  →  rendered in the chat window
+```
+
+The API key lives **only** on the server (the Netlify function), never in the browser. The front-end just talks to `/.netlify/functions/chat`.
+
+### Files
+
+```
+netlify/
+└── functions/
+    ├── chat.js             # serverless function → Groq
+    └── knowledge-base.js   # everything the bot knows about Anvi
+chatbot.js                  # front-end chat logic
+netlify.toml                # Netlify build + functions config
+.env.example                # template for the API key
+```
+
+### Get a free Groq API key
+
+1. Sign up at https://console.groq.com (no credit card required).
+2. Go to **API Keys** → **Create API Key**, and copy it.
+
+Groq's free tier is plenty for a portfolio bot. You only ever pay if you upgrade to a paid plan.
+
+### Run it locally
+
+The chatbot needs the Netlify dev server (a plain `python -m http.server` won't run the function).
+
+```powershell
+# 1. Install the Netlify CLI + dev dependencies
+npm install
+
+# 2. Add your key
+#    Copy .env.example to .env and paste your GROQ_API_KEY
+copy .env.example .env
+
+# 3. Start the dev server (serves the site AND the function)
+npx netlify dev
+```
+
+Then open the URL it prints (usually http://localhost:8888) and try the Ask AI section.
+
+### Deploy on Netlify
+
+1. Push this repo to GitHub (already connected if you cloned it).
+2. In Netlify: **Add new site → Import from Git**, pick the repo.
+3. Netlify auto-detects `netlify.toml` — no build command needed.
+4. **Site settings → Environment variables →** add `GROQ_API_KEY` with your key.
+5. Deploy. The Ask AI section goes live with the rest of the site.
+
+> If you change the model, set a `GROQ_MODEL` env var too. Current model IDs: https://console.groq.com/docs/models
+
+### Update what the bot knows
+
+Edit `netlify/functions/knowledge-base.js`. No retraining, no vector database — the text is injected straight into the system prompt on every request. Add a new job, project, or hobby and redeploy.

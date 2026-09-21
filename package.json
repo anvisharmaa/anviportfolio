@@ -1,0 +1,13 @@
+{
+  "name": "anvi-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Anvi Sharma's portfolio with an AI chatbot (Ask AI) powered by Groq via a Netlify function.",
+  "scripts": {
+    "dev": "netlify dev",
+    "start": "netlify dev"
+  },
+  "devDependencies": {
+    "netlify-cli": "^17.0.0"
+  }
+}

@@ -219,6 +219,57 @@
       </div>
     </section>
 
+    <!-- Ask AI -->
+    <section class="section ask" id="ask-ai">
+      <p class="section__label" data-reveal>06 — Ask AI</p>
+      <div class="ask__head" data-reveal>
+        <h2 class="ask__title">
+          Ask my AI anything<em>.</em>
+        </h2>
+        <p class="ask__intro">
+          A little assistant I built, powered by an LLM and grounded in my resume,
+          projects, and interests. Ask about my work, my skills, or what I get up
+          to after hours. It only knows about me.
+        </p>
+      </div>
+
+      <div class="chat" data-reveal>
+        <div class="chat__window" data-chat-window role="log" aria-live="polite" aria-label="Chat conversation">
+          <div class="chat__msg chat__msg--bot">
+            <span class="chat__avatar" aria-hidden="true">AI</span>
+            <div class="chat__bubble">
+              Hi! I'm Anvi's portfolio assistant. Ask me about her experience,
+              projects, skills, or hobbies. What would you like to know?
+            </div>
+          </div>
+        </div>
+
+        <div class="chat__suggestions" data-chat-suggestions>
+          <button class="chat__chip" type="button" data-suggestion="What did Anvi do at Jabil?">What did Anvi do at Jabil?</button>
+          <button class="chat__chip" type="button" data-suggestion="Tell me about the Diabetes Risk Calculator project.">Diabetes Risk Calculator</button>
+          <button class="chat__chip" type="button" data-suggestion="What are Anvi's strongest technical skills?">Top skills</button>
+          <button class="chat__chip" type="button" data-suggestion="What does Anvi like to do outside of work?">Hobbies</button>
+        </div>
+
+        <form class="chat__form" data-chat-form>
+          <input
+            class="chat__input"
+            data-chat-input
+            type="text"
+            name="message"
+            placeholder="Ask me about Anvi…"
+            autocomplete="off"
+            aria-label="Type your question"
+            maxlength="500"
+          />
+          <button class="chat__send" type="submit" data-chat-send aria-label="Send message">
+            <span>Send</span>
+          </button>
+        </form>
+        <p class="chat__note" data-reveal>Responses are AI-generated and grounded in Anvi's resume. They may not be perfect.</p>
+      </div>
+    </section>
+
     <!-- Contact -->
     <section class="section contact" id="contact">
       <p class="section__label" data-reveal>05 — Contact</p>
@@ -236,5 +287,6 @@
   </footer>
 
   <script src="script.js"></script>
+  <script src="chatbot.js"></script>
 </body>
 </html>

@@ -1,0 +1,18 @@
+# Netlify configuration for the portfolio + Ask AI chatbot.
+# The site is static (no build step); the chatbot runs as a serverless function.
+
+[build]
+  # Static site — nothing to compile. Publish the repo root.
+  publish = "."
+  functions = "netlify/functions"
+
+[functions]
+  # Groq's Node SDK isn't required (we use fetch), but bundling with esbuild
+  # keeps cold starts fast and handles the CommonJS require of knowledge-base.js.
+  node_bundler = "esbuild"
+
+# Nice-to-have: let visitors hit /api/chat instead of the long function path.
+[[redirects]]
+  from = "/api/chat"
+  to = "/.netlify/functions/chat"
+  status = 200
