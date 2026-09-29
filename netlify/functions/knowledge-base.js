@@ -62,6 +62,14 @@ St. Petersburg, FL | June 2025 – August 2025
   contact information and advisor outreach tracking.
 
 # PROJECTS
+## Job Search with JEV (CSS, JavaScript, HTML)	September 2026
+- Developed a classification model using TypeScript AI’s JEV to suggest whether a user should apply to a job or not
+- Published a browser extension in Google Chrome’s Developer mode for application to any job page or posting
+- Code: https://github.com/anvisharmaa/JobswithJEV
+
+## Portfolio Chatbot (JavaScript)	September 2026
+- Developed a chatbot for her portfolio using Groq’s API and a knowledge base of her resume and LinkedIn
+- Pushed to existing Github repository and hosted live on Netlify with LLM implementation and natural language replies
 
 ## Diabetes Risk Calculator
 A full-stack calculator, from model training to visualization in Streamlit.
